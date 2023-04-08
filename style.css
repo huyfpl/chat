@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 20%;
+  place-items: center;
+ background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+}
+.container{
+    text-align: center;
+  position: relative;
+  height: 55px;
+  width: 320px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+}
+.container input{
+  width: 100%;
+  text-align: center;
+  border: 1px solid #8e44ad;
+  padding-left: 15px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 5px;
+}
+.container input::placeholder{
+  font-size: 17px;
+}
+.container span{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #8e44ad;
+  cursor: pointer;
+  display: none;
+}
+.container input:valid ~ span{
+  display: block;
+}
+.container span i.hide-btn::before{
+  content: "\f070";
+}
+ #copyBtn{
+    margin-top: 20px;
+    text-align: center;
+    width: 50px;
+    height: 20px;
+    background-color: #21ff76;
+    border: #21ff76;
+    margin-left: 137px;
+}
+.container button:hover{
+    background-color: #f63a19;
+}
+#content{
+   margin-left: -13px;
+   margin-top: 20px;
+}
+#content{
+   width: 350px;
+    border: 2px solid red;
+}
+#button_enter{
+    margin-top: 20px;
+   
+}
+#copyBtn{
+    cursor: pointer;
+}
+#all{
+    text-align: center;
+}
+#anhfb{
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 110px;
+}
